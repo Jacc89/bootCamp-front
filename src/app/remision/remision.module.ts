@@ -4,6 +4,8 @@ import { EditarRemComponent } from './editar-rem/editar-rem.component';
 import { EliminarRemComponent } from './eliminar-rem/eliminar-rem.component';
 import { ListarRemComponent } from './listar-rem/listar-rem.component';
 import { AgregarRemComponent } from './agregar-rem/agregar-rem.component';
+import { HomeRemComponent } from './home-rem/home-rem.component';
+import { RemisionRoutingModule } from './remision-routing.module';
 
 
 
@@ -12,10 +14,12 @@ import { AgregarRemComponent } from './agregar-rem/agregar-rem.component';
     EditarRemComponent,
     EliminarRemComponent,
     ListarRemComponent,
-    AgregarRemComponent
+    AgregarRemComponent,
+    HomeRemComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RemisionRoutingModule
   ]
 })
 export class RemisionModule { }

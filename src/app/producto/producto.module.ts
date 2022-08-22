@@ -5,6 +5,7 @@ import { EditarProComponent } from './editar-pro/editar-pro.component';
 import { AgregarProComponent } from './agregar-pro/agregar-pro.component';
 import { ListarProComponent } from './listar-pro/listar-pro.component';
 import { ProductoRoutingModule } from './producto-routing.module';
+import { HomeProComponent } from './home-pro/home-pro.component';
 
 
 
@@ -13,7 +14,8 @@ import { ProductoRoutingModule } from './producto-routing.module';
     EliminarProComponent,
     EditarProComponent,
     AgregarProComponent,
-    ListarProComponent
+    ListarProComponent,
+    HomeProComponent
   ],
   imports: [
     CommonModule,

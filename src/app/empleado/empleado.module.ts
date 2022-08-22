@@ -4,6 +4,8 @@ import { ListarEmpComponent } from './listar-emp/listar-emp.component';
 import { AgregarEmpComponent } from './agregar-emp/agregar-emp.component';
 import { EliminarEmpComponent } from './eliminar-emp/eliminar-emp.component';
 import { EditarEmpComponent } from './editar-emp/editar-emp.component';
+import { HomeEmpComponent } from './home-emp/home-emp.component';
+import { EmpleadoRoutingModule } from './empleado-routing.module';
 
 
 
@@ -12,10 +14,12 @@ import { EditarEmpComponent } from './editar-emp/editar-emp.component';
     ListarEmpComponent,
     AgregarEmpComponent,
     EliminarEmpComponent,
-    EditarEmpComponent
+    EditarEmpComponent,
+    HomeEmpComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    EmpleadoRoutingModule
   ]
 })
 export class EmpleadoModule { }
