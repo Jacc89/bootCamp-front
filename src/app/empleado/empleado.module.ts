@@ -6,6 +6,7 @@ import { EliminarEmpComponent } from './eliminar-emp/eliminar-emp.component';
 import { EditarEmpComponent } from './editar-emp/editar-emp.component';
 import { HomeEmpComponent } from './home-emp/home-emp.component';
 import { EmpleadoRoutingModule } from './empleado-routing.module';
+import { MaterialModule } from '../material/material.module';
 
 
 
@@ -19,7 +20,8 @@ import { EmpleadoRoutingModule } from './empleado-routing.module';
   ],
   imports: [
     CommonModule,
-    EmpleadoRoutingModule
+    EmpleadoRoutingModule,
+    MaterialModule
   ]
 })
 export class EmpleadoModule { }

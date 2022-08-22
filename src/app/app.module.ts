@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CompartidosModule } from './compartidos/compartidos.module';
 import { MaterialModule } from './material/material.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { MaterialModule } from './material/material.module';
     CompartidosModule,
     AppRoutingModule,
     MaterialModule,
+    HttpClientModule
     
   ],
   providers: [],

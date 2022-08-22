@@ -7,6 +7,10 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatCardModule} from '@angular/material/card';
+import {MatTableModule} from '@angular/material/table';
+import {MatPaginatorModule} from '@angular/material/paginator';
+
+
 
 
 
@@ -22,7 +26,11 @@ import {MatCardModule} from '@angular/material/card';
     MatMenuModule,
     MatButtonModule,
     MatProgressSpinnerModule,
-    MatCardModule
+    MatCardModule,
+    MatTableModule,
+    MatPaginatorModule,
+    
+  
   ],
   exports:[
     MatToolbarModule,
@@ -30,7 +38,10 @@ import {MatCardModule} from '@angular/material/card';
     MatMenuModule,
     MatButtonModule,
     MatProgressSpinnerModule,
-    MatCardModule
+    MatCardModule,
+    MatTableModule,
+    MatPaginatorModule,
+ 
   ]
 })
 export class MaterialModule { }

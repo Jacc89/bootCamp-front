@@ -22,7 +22,7 @@ const routes: Routes = [
   imports: [
     CommonModule,
     RouterModule.forRoot(routes),
-    MaterialModule  
+    MaterialModule
     
   ],
   exports: [RouterModule]

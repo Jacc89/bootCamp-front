@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductoService } from '../services/producto.service';
 
 @Component({
   selector: 'app-listar-pro',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./listar-pro.component.css']
 })
 export class ListarProComponent implements OnInit {
+  displayedColumns: string[] = ['id','nombre','caracteristica'];
+  
+  constructor(private productoServices: ProductoService) { }
 
-  constructor() { }
+  ngOnInit(): void { 
+       this.productoServices.listProd();
 
-  ngOnInit(): void {
   }
+   get resultados(){
+    return this.productoServices.resultados;
+   }
 
 }

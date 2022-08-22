@@ -1,4 +1,4 @@
-export interface API {
+export interface IdataEmpleado {
     isExitoso: boolean;
     resultado: IEmpleado[];
     mensaje:   string;

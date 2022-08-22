@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {AfterViewInit, Component, ViewChild, OnInit} from '@angular/core';
+import { EmpleadoService } from '../services/empleado.service';
+
 
 @Component({
   selector: 'app-listar-emp',
@@ -6,10 +8,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./listar-emp.component.css']
 })
 export class ListarEmpComponent implements OnInit {
+  displayedColumns: string[] = ['id','nombres','apellidos','direccion','telefono','correo','sueldo','cargo'];
 
-  constructor() { }
+  constructor(private empleadoService: EmpleadoService) { }
 
   ngOnInit(): void {
+    this.empleadoService.listEmpl();
   }
+   get resultados(){
+    return this.empleadoService.resultados;
+   }
 
 }

@@ -1,4 +1,4 @@
-export interface API {
+export interface IDataProducto {
     isExitoso: boolean;
     resultado: IProducto[];
     mensaje:   string;

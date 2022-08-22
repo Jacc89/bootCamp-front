@@ -6,6 +6,8 @@ import { EditarCliComponent } from './editar-cli/editar-cli.component';
 import { EliminarCliComponent } from './eliminar-cli/eliminar-cli.component';
 import { HomeCliComponent } from './home-cli/home-cli.component';
 import { ClienteRoutingModule } from './cliente-routing.module';
+import { MaterialModule } from '../material/material.module';
+import { ClienteService } from './services/cliente.service';
 
 
 
@@ -19,7 +21,11 @@ import { ClienteRoutingModule } from './cliente-routing.module';
   ],
   imports: [
     CommonModule,
-    ClienteRoutingModule
+    ClienteRoutingModule,
+    MaterialModule
+  ],
+  providers: [
+    ClienteService
   ]
 })
 export class ClienteModule { }
