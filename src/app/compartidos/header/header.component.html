@@ -1,0 +1,39 @@
+<mat-toolbar color="primary">
+ 
+  <button mat-icon-button="warn" aria-label="Example icon button with a home icon" routerLink="inicio"  routerLinkActive="active">
+    <mat-icon>home</mat-icon>
+  </button>
+ 
+
+    <span class="example-spacer"></span>
+    <!-- empleado -->
+    <button mat-button color="accent" [matMenuTriggerFor]="empleado">Empleado</button>
+    <mat-menu #empleado="matMenu">
+      <button mat-menu-item routerLink="/cliente/listado" >Lista</button>
+      <button mat-menu-item>Agregar</button>
+    </mat-menu>
+    <!-- producto -->
+    <button mat-button color="accent" [matMenuTriggerFor]="producto">Producto</button>
+<mat-menu #producto="matMenu">
+  <button mat-menu-item>Lista</button>
+  <button mat-menu-item>Agregar</button>
+</mat-menu>
+<!-- cliente -->
+<button mat-button color="accent" [matMenuTriggerFor]="cliente">Cliente</button>
+<mat-menu #cliente="matMenu">
+  <button mat-menu-item routerLink="cliente/listado"  >Lista</button>
+  <button mat-menu-item>Agregar</button>
+</mat-menu>
+<!-- remision -->
+<button mat-button color="accent" [matMenuTriggerFor]="remision">Remisiòn</button>
+<mat-menu #remision="matMenu">
+  <button mat-menu-item>Lista</button>
+  <button mat-menu-item>Agregar</button>
+</mat-menu>
+   
+   
+   
+   
+   
+   
+  </mat-toolbar>
