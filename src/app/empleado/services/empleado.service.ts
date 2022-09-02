@@ -18,4 +18,9 @@ export class EmpleadoService {
       this.resultados = res.resultado;
     })
   }
+
+  crearEmpl(empleado: IEmpleado){
+    return this.http.post(this.empleadoURL, empleado)
+
+ }
 }

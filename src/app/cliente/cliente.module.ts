@@ -8,6 +8,7 @@ import { HomeCliComponent } from './home-cli/home-cli.component';
 import { ClienteRoutingModule } from './cliente-routing.module';
 import { MaterialModule } from '../material/material.module';
 import { ClienteService } from './services/cliente.service';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -22,7 +23,8 @@ import { ClienteService } from './services/cliente.service';
   imports: [
     CommonModule,
     ClienteRoutingModule,
-    MaterialModule
+    MaterialModule,
+    ReactiveFormsModule
   ],
   providers: [
     ClienteService

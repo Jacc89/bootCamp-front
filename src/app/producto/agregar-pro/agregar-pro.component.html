@@ -1,1 +1,21 @@
-<p>agregar-pro works!</p>
+<mat-card>
+  <h2 class="text-center"> Crear Producto</h2>
+  <form [formGroup]="producForm" (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="legacy" class="producto-field">
+      <mat-label>Nombre</mat-label>
+      <input matInput placeholder="Nombre Producto" formControlName="nombre">
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="fill" class="producto-field">
+      <mat-label>Caracteristicas</mat-label>
+      <textarea matInput formControlName="caracteristica"></textarea>
+    </mat-form-field>
+    <br>
+    <button mat-raised-button color="primary" [disabled]="!producForm.valid" class="producto-form-btn">Crear producto</button>
+    <!-- <button mat-raised-button color="warn" class="producto-form-btn">Cancelar</button> -->
+
+  </form>
+
+
+</mat-card>

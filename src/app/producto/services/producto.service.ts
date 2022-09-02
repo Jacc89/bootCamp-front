@@ -19,4 +19,9 @@ export class ProductoService {
       this.resultados = res.resultado;
     })
   }
+
+  crearProd(producto: IProducto){
+     return this.http.post(this.productoURL, producto)
+
+  }
 }

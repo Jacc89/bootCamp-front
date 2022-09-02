@@ -1,1 +1,53 @@
 <p>agregar-emp works!</p>
+<mat-card>
+    <h2 class="text-center"> Crear Empleado</h2>
+    <form [formGroup]="EmplForm" (ngSubmit)="onSubmit()">
+      <mat-form-field appearance="legacy" class="producto-field">
+        <mat-label>Nombres</mat-label>
+        <input matInput placeholder="Nombres Empleado" formControlName="nombres">
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      </mat-form-field>
+      
+      <mat-form-field appearance="legacy" class="producto-field">
+        <mat-label>Apellidos</mat-label>
+        <input matInput placeholder="Apellidos Producto" formControlName="apellidos">
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      </mat-form-field>
+      <br>
+      <mat-form-field appearance="legacy" class="producto-field">
+        <mat-label>Direccion</mat-label>
+        <input matInput placeholder="Direccion " formControlName="direccion">
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      </mat-form-field>
+      <br>
+      <mat-form-field appearance="legacy" class="producto-field">
+        <mat-label>Telefono</mat-label>
+        <input matInput placeholder="Telefono " formControlName="telefono">
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      </mat-form-field>
+      <br>
+      <mat-form-field appearance="legacy" class="producto-field">
+        <mat-label>Correo</mat-label>
+        <input type="email" matInput  placeholder="pat@example.com" formControlName="correo">
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      </mat-form-field>
+      <br>
+      <mat-form-field appearance="legacy" class="producto-field">
+        <mat-label>Sueldo</mat-label>
+        <input matInput placeholder="sueldo " formControlName="sueldo">
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      </mat-form-field>
+      <br>
+      <mat-form-field appearance="legacy" class="producto-field">
+        <mat-label>Cargo</mat-label>
+        <input matInput placeholder="cargo " formControlName="cargo">
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      </mat-form-field>
+      <br>
+      <button mat-raised-button color="primary" [disabled]="!EmplForm.valid" class="producto-form-btn">Crear producto</button>
+      <!-- <button mat-raised-button color="warn" class="producto-form-btn">Cancelar</button> -->
+  
+    </form>
+  
+  
+  </mat-card>

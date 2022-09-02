@@ -7,6 +7,7 @@ import { ListarProComponent } from './listar-pro/listar-pro.component';
 import { ProductoRoutingModule } from './producto-routing.module';
 import { HomeProComponent } from './home-pro/home-pro.component';
 import { MaterialModule } from '../material/material.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -21,7 +22,8 @@ import { MaterialModule } from '../material/material.module';
   imports: [
     CommonModule,
     ProductoRoutingModule,
-    MaterialModule
+    MaterialModule,
+    ReactiveFormsModule
   ]
 })
 export class ProductoModule { }

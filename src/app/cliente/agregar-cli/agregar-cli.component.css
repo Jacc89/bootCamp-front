@@ -1,0 +1,23 @@
+.producto-field-form {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 16px;
+  }
+  .producto-field {
+    width: 50%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 16px;
+  }
+
+  .producto-form-btn{
+    width: 50%;
+    padding: auto;
+    margin: 5px;
+    position: relative;
+    
+  }

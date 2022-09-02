@@ -1,1 +1,29 @@
-<p>agregar-cli works!</p>
+<mat-card>
+    <h2 class="text-center"> Crear Cliente</h2>
+    <form [formGroup]="clientForm" (ngSubmit)="onSubmit()">
+      <mat-form-field appearance="legacy" class="producto-field">
+        <mat-label>Nombre</mat-label>
+        <input matInput placeholder="Nombre Producto" formControlName="nombre">
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      </mat-form-field>
+      <br>
+      <mat-form-field appearance="legacy" class="producto-field">
+        <mat-label>Direccion</mat-label>
+        <input matInput placeholder="Direccion Producto" formControlName="direccion">
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      </mat-form-field>
+      <br>
+      <mat-form-field appearance="legacy" class="producto-field">
+        <mat-label>Telefono</mat-label>
+        <input matInput placeholder="Telefono Producto" formControlName="telefono">
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      </mat-form-field>
+      <br>
+      <button mat-raised-button color="primary" [disabled]="!clientForm.valid" class="producto-form-btn">Crear producto</button>
+      <!-- <button mat-raised-button color="warn" class="producto-form-btn">Cancelar</button> -->
+  
+    </form>
+  
+  
+  </mat-card>
+  

@@ -19,4 +19,9 @@ export class ClienteService {
       this.resultados = res.resultado;
     })
   }
+
+  crearClient(cliente:ICliente){
+    return this.http.post(this.clienteUrl, cliente)
+
+ }
 }

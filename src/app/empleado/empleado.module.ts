@@ -7,6 +7,7 @@ import { EditarEmpComponent } from './editar-emp/editar-emp.component';
 import { HomeEmpComponent } from './home-emp/home-emp.component';
 import { EmpleadoRoutingModule } from './empleado-routing.module';
 import { MaterialModule } from '../material/material.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -21,7 +22,8 @@ import { MaterialModule } from '../material/material.module';
   imports: [
     CommonModule,
     EmpleadoRoutingModule,
-    MaterialModule
+    MaterialModule,
+    ReactiveFormsModule
   ]
 })
 export class EmpleadoModule { }
