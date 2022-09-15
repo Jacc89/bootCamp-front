@@ -1,1 +1,31 @@
 <p>editar-cli works!</p>
+<mat-card>
+    <h2 mat-dialog-title>Actualizar Cliente</h2>
+<mat-dialog-content [formGroup]="form">
+    <mat-form-field class="crear-cli">
+        <input matInput placeholder="Id de cliente" 
+        formControlName="id">
+    </mat-form-field><br>
+    <mat-form-field class="crear-cli">
+        <input matInput placeholder="Nombre de cliente" 
+        formControlName="nombre">
+    </mat-form-field>
+    <br>
+    <mat-form-field class="crear-cli">
+        <input matInput placeholder="Direccion de cliente" 
+        formControlName="direccion">
+    </mat-form-field>
+    <br>
+    <mat-form-field class="crear-cli">
+        <input matInput placeholder="Telefono de cliente" 
+        formControlName="telefono">
+    </mat-form-field>
+
+</mat-dialog-content>
+<mat-dialog-actions>
+    <!-- <button class="mat-raised-button" (click)="Cerrar()">Cerrar</button> -->
+    <!-- <button class="mat-raised-button mat-accent" (click)="Guardar()">Guardar</button> -->
+    
+</mat-dialog-actions>
+
+</mat-card>

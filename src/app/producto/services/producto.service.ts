@@ -24,4 +24,9 @@ export class ProductoService {
      return this.http.post(this.productoURL, producto)
 
   }
+
+  actualizarPro(id: number, producto:IProducto){
+    return this.http.put(this.productoURL + id, producto);
+
+  }
 }

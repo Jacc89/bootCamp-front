@@ -1,1 +1,24 @@
-<p>editar-pro works!</p>
+<mat-card>
+    <h2 mat-dialog-title>Actualizar Producto</h2>
+<mat-dialog-content [formGroup]="formPro">
+    <mat-form-field class="crear-cli">
+        <input matInput placeholder="Id de cliente" 
+        formControlName="id" disable>
+    </mat-form-field><br>
+    <mat-form-field class="crear-cli">
+        <input matInput placeholder="Nombre de Producto" 
+        formControlName="nombre">
+    </mat-form-field>
+    <br>
+    <mat-form-field class="crear-cli">
+        <input matInput placeholder="Caracteristicas" 
+        formControlName="caracteristica">
+    </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions>
+    <button class="mat-raised-button" (click)="Cerrar()">Cerrar</button>
+    <button class="mat-raised-button mat-warn" (click)="Guardar()">Guardar</button>
+    
+</mat-dialog-actions>
+
+</mat-card>

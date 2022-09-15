@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { ClienteService } from '../services/cliente.service';
+import { IDataCliente } from '../interfaces/IDataCliente';
 
 @Component({
   selector: 'app-eliminar-cli',
@@ -6,10 +9,34 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./eliminar-cli.component.css']
 })
 export class EliminarCliComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
+  id:any;
+  cliente={
+    nombre:''
   }
 
+  constructor(private service: ClienteService,
+              private route: ActivatedRoute,
+              private router: Router) { }
+
+  ngOnInit(): void {
+    this.id= this.route.snapshot.paramMap.get('id');
+    this.service.getCliente(this.id).subscribe((data:any)=>{
+      console.log(data);
+      this.cliente.nombre= data.result.nombre;
+
+    })
+  }
+
+  cancelar(){
+    this.router.navigate(['listado']);
+
+  }
+  confirmar(){
+    this.service.eliminar(this.id).subscribe((data:any)=>{
+      console.log(data.id);
+      this.router.navigate(['listado']);
+    })
+
+  }
+ 
 }

@@ -19,9 +19,20 @@ export class ClienteService {
       this.resultados = res.resultado;
     })
   }
+  getCliente(id:number){
+    return this.http.get(this.clienteUrl+id);
+  }
 
   crearClient(cliente:ICliente){
     return this.http.post(this.clienteUrl, cliente)
 
+ }
+ editarCliente(id: number, cliente: ICliente){
+  return this.http.put(this.clienteUrl+id, cliente);
+
+ }
+
+ eliminar(id:number){
+  return this.http.delete(this.clienteUrl+id)
  }
 }

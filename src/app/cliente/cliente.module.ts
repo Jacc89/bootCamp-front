@@ -26,6 +26,10 @@ import { ReactiveFormsModule } from '@angular/forms';
     MaterialModule,
     ReactiveFormsModule
   ],
+  entryComponents: [
+    EditarCliComponent
+
+  ],
   providers: [
     ClienteService
   ]

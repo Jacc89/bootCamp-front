@@ -13,7 +13,7 @@ const routes: Routes = [
     { path: 'listado', component: ListarCliComponent},
     { path: 'agregar', component: AgregarCliComponent},
     { path: 'editar/:id', component: EditarCliComponent},
-    { path: 'eliminar/:id', component: EliminarCliComponent},
+    { path: 'eliminar-cli/:id', component: EliminarCliComponent},
     { path: '**', redirectTo:'listado' }
     ]
   }

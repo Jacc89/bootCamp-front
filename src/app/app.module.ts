@@ -8,6 +8,7 @@ import { CompartidosModule } from './compartidos/compartidos.module';
 import { MaterialModule } from './material/material.module';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ClienteModule } from './cliente/cliente.module';
 
 @NgModule({
   declarations: [
@@ -21,9 +22,11 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     MaterialModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ClienteModule
     
   ],
+  
   providers: [],
   bootstrap: [AppComponent]
 })

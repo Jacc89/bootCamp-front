@@ -24,6 +24,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     ProductoRoutingModule,
     MaterialModule,
     ReactiveFormsModule
+  ],
+  entryComponents:[
+    EditarProComponent
   ]
 })
 export class ProductoModule { }
