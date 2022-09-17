@@ -27,14 +27,14 @@ export class ListarCliComponent implements OnInit {
 
   actualizarCliente(cliente: ICliente){
     console.log(cliente);
-    this.dialog.open(EditarCliComponent), {
+    this.dialog.open(EditarCliComponent, {
       data: {
         id: cliente.id,
         nombre: cliente.nombre,
         direccion:  cliente.direccion,
         telefono:   cliente.telefono,
       }
-    }
+    })
   }
 
 }

@@ -24,6 +24,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     EmpleadoRoutingModule,
     MaterialModule,
     ReactiveFormsModule
+  ],
+  entryComponents:[
+    EditarEmpComponent
   ]
 })
 export class EmpleadoModule { }

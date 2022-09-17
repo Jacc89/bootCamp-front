@@ -23,4 +23,8 @@ export class EmpleadoService {
     return this.http.post(this.empleadoURL, empleado)
 
  }
+ actualizarEmpl(id: number, empleado:IEmpleado){
+  return this.http.put(this.empleadoURL + id, empleado);
+
+}
 }

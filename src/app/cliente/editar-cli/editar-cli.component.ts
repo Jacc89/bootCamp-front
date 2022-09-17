@@ -16,8 +16,7 @@ export class EditarCliComponent implements OnInit {
 
   constructor(private fb: FormBuilder,
               private dialogRef: MatDialogRef<EditarCliComponent>,
-              @Inject(MAT_DIALOG_DATA) 
-              private data: { nombre:string, direccion:string, telefono:string, id: number},
+              @Inject(MAT_DIALOG_DATA) private data: { nombre:string, direccion:string, telefono:string, id: number},
               private service: ClienteService,
               private router: Router) {
                   this.id = data.id;

@@ -23,7 +23,7 @@ export class ListarEmpComponent implements OnInit {
     return this.empleadoService.resultados;
    }
 
-   ActualizarProducto(empleado: IEmpleado){
+   ActualizarEmpleado(empleado: IEmpleado){
     console.log(empleado);
     this.dialog.open(EditarEmpComponent , {data:{
       id:        empleado.id,
@@ -33,7 +33,7 @@ export class ListarEmpComponent implements OnInit {
       telefono:  empleado.telefono,
       correo:    empleado.correo,
       sueldo:    empleado.sueldo,
-      cargo:     empleado.cargo
+      cargo:     empleado.cargo 
 
     }})
    }

@@ -1,1 +1,47 @@
-<p>editar-emp works!</p>
+<mat-card>
+    <h2 mat-dialog-title>Actualizar Empleado</h2>
+<mat-dialog-content [formGroup]="formEmpl">
+    <mat-form-field class="crear-cli">
+        <input matInput placeholder="Id de empleado" 
+        formControlName="id" disable>
+    </mat-form-field><br>
+    <mat-form-field class="crear-cli">
+        <input matInput placeholder="Nombres" 
+        formControlName="nombres">
+    </mat-form-field>
+    <mat-form-field class="crear-cli">
+        <input matInput placeholder="Apellidos" 
+        formControlName="apellidos">
+    </mat-form-field>
+    <br>
+    <mat-form-field class="crear-cli">
+        <input matInput placeholder="Direccion" 
+        formControlName="direccion">
+    </mat-form-field>
+    
+    <mat-form-field class="crear-cli">
+        <input matInput placeholder="Telefono" 
+        formControlName="telefono">
+    </mat-form-field>
+    <br>
+    <mat-form-field class="crear-cli center-content">
+        <input matInput placeholder="Correo" 
+        formControlName="correo">
+    </mat-form-field>
+    <br>
+    <mat-form-field class="crear-cli">
+        <input matInput placeholder="Sueldo" 
+        formControlName="sueldo">
+    </mat-form-field>
+    <mat-form-field class="crear-cli">
+        <input matInput placeholder="Cargo" 
+        formControlName="cargo">
+    </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions>
+    <button class="mat-raised-button " (click)="Cerrar()">Cerrar</button>
+    <button class="mat-raised-button mat-warn" (click)="Guardar()" layout-align="end center">Guardar</button>
+    
+</mat-dialog-actions>
+
+</mat-card>
