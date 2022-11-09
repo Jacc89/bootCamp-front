@@ -16,9 +16,7 @@ export class ListarCliComponent implements OnInit {
               private dialog: MatDialog) { }
 
   ngOnInit(): void {
-   this.ClientService.listClient();
-   
-    
+   this.ClientService.listClient();    
   }
 
   get resultados(){
